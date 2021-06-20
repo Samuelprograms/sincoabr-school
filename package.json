@@ -1,7 +1,7 @@
 {
   "name": "interview",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://Samuelprograms.github.io/sincoabr-school",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

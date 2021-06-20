@@ -1,0 +1,15 @@
+.student {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.student .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  border: 1px solid #aaa;
+  width: 400px;
+  height: 400px;
+  overflow-y: scroll;
+}

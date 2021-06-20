@@ -1,0 +1,38 @@
+.teacher {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teacher ul {
+  width: 400px;
+  height: 400px;
+  overflow-y: scroll;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+}
+.teacher ul h2 {
+  padding: 10px;
+  width: 60%;
+  border-bottom: 1px solid #444;
+}
+.teacher__form {
+  margin: 20px;
+}
+@media only screen and (max-width: 590px) {
+  .form__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .teacher ul {
+    width: 90%;
+  }
+  .teacher ul li {
+    width: 30%;
+  }
+}

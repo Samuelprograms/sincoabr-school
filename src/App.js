@@ -1,25 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Class from "./components/Class";
 import Teacher from "./components/Teacher";
 import Student from "./components/Student";
 import Api from "./components/Api";
-import axios from "axios";
 import "./App.css";
 
 function App() {
   const [screen, setScreen] = useState({ id: 1, avaliable: true });
-  const [oldData, setOldData] = useState([]);
   const [newData, setNewData] = useState([]);
-
-  // const fetchData = async () => {
-  //   await axios
-  //     .get("https://60cd4c6a71b73400171f92c9.mockapi.io/users")
-  //     .then((res) => setOldData([...oldData, res.data]));
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
 
   return (
     <div className="App">

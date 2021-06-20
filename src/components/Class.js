@@ -58,8 +58,8 @@ const Class = ({ data, setData }) => {
       />
       <div className="class__buttons">
         <h2>Select the Teacher</h2>
-        {data.map((info) => (
-          <button onClick={(e) => addClass(info.teacher, e)}>
+        {data.map((info, index) => (
+          <button key={index} onClick={(e) => addClass(info.teacher, e)}>
             {info.teacher}
           </button>
         ))}

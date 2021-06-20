@@ -112,10 +112,13 @@ const Student = ({ data, setData }) => {
               (matter) =>
                 info.teacher.includes(search) || matter.includes(search)
             )
-            .map((matter) => (
-              <button onClick={(e) => addStudent(info.teacher, matter, e)}>
+            .map((matter, index) => (
+              <button
+                key={index}
+                onClick={(e) => addStudent(info.teacher, matter, e)}
+              >
                 {info.teacher}
-                {"  "}
+                {"-"}
                 {matter}
               </button>
             ));

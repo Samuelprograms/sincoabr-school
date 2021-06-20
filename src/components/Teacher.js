@@ -98,8 +98,8 @@ const Teacher = ({ data, setData }) => {
       </div>
       <ul style={{ color: "white" }}>
         <h2>Teachers</h2>
-        {data.map((info) => (
-          <li>{info.teacher}</li>
+        {data.map((info, index) => (
+          <li key={index}>{info.teacher}</li>
         ))}
       </ul>
     </div>
